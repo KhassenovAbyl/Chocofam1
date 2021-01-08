@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		EC570FA925A8D246002D46FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC570FA825A8D246002D46FE /* AppDelegate.swift */; };
 		EC570FAB25A8D246002D46FE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC570FAA25A8D246002D46FE /* SceneDelegate.swift */; };
-		EC570FAD25A8D246002D46FE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC570FAC25A8D246002D46FE /* ViewController.swift */; };
-		EC570FB025A8D246002D46FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC570FAE25A8D246002D46FE /* Main.storyboard */; };
 		EC570FB225A8D24A002D46FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC570FB125A8D24A002D46FE /* Assets.xcassets */; };
 		EC570FB525A8D24A002D46FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC570FB325A8D24A002D46FE /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -19,8 +17,6 @@
 		EC570FA525A8D246002D46FE /* Chocofam1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chocofam1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC570FA825A8D246002D46FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EC570FAA25A8D246002D46FE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EC570FAC25A8D246002D46FE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		EC570FAF25A8D246002D46FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EC570FB125A8D24A002D46FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EC570FB425A8D24A002D46FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EC570FB625A8D24A002D46FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -56,15 +52,21 @@
 		EC570FA725A8D246002D46FE /* Chocofam1 */ = {
 			isa = PBXGroup;
 			children = (
-				EC570FA825A8D246002D46FE /* AppDelegate.swift */,
-				EC570FAA25A8D246002D46FE /* SceneDelegate.swift */,
-				EC570FAC25A8D246002D46FE /* ViewController.swift */,
-				EC570FAE25A8D246002D46FE /* Main.storyboard */,
-				EC570FB125A8D24A002D46FE /* Assets.xcassets */,
-				EC570FB325A8D24A002D46FE /* LaunchScreen.storyboard */,
+				EC570FBD25A8D25B002D46FE /* Supporting Files */,
 				EC570FB625A8D24A002D46FE /* Info.plist */,
 			);
 			path = Chocofam1;
+			sourceTree = "<group>";
+		};
+		EC570FBD25A8D25B002D46FE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EC570FA825A8D246002D46FE /* AppDelegate.swift */,
+				EC570FAA25A8D246002D46FE /* SceneDelegate.swift */,
+				EC570FB125A8D24A002D46FE /* Assets.xcassets */,
+				EC570FB325A8D24A002D46FE /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,7 +128,6 @@
 			files = (
 				EC570FB525A8D24A002D46FE /* LaunchScreen.storyboard in Resources */,
 				EC570FB225A8D24A002D46FE /* Assets.xcassets in Resources */,
-				EC570FB025A8D246002D46FE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,7 +138,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC570FAD25A8D246002D46FE /* ViewController.swift in Sources */,
 				EC570FA925A8D246002D46FE /* AppDelegate.swift in Sources */,
 				EC570FAB25A8D246002D46FE /* SceneDelegate.swift in Sources */,
 			);
@@ -146,14 +146,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		EC570FAE25A8D246002D46FE /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EC570FAF25A8D246002D46FE /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		EC570FB325A8D24A002D46FE /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
