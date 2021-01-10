@@ -8,23 +8,33 @@
 import UIKit
 
 class HomeViewController: UIViewController {
-
     
+    var viewModel = HomeViewModel()
+    
+    private let activityIndicator: UIActivityIndicatorView = {
+        let indicator = UIActivityIndicatorView()
+        return indicator
+    }()
+
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        viewModel.getMarkets()
+        StartURLSession()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    private func StartURLSession() {
+        viewModel.didStartRequest = {
+            self.activityIndicator.startAnimating()
+        }
+        viewModel.didEndRequest = {
+            self.activityIndicator.stopAnimating()
+            for i in self.viewModel.markets{
+                print(i)
+            }
+        }
+        viewModel.didGetError = { error in
+            print(error)
+        }
     }
-    */
-
+    
 }
