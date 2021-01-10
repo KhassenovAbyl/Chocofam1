@@ -12,11 +12,11 @@ final class HomeViewModel {
     var didEndRequest: () -> Void = {}
     var didGetError: (Error) -> Void = {_ in }
     private(set) var markets: [Market] = []
-    private let marketService: MarketDataProviderProtocol = MarketNetworkDataProvide()
+    private let marketService = MarketService()
     
     func getMarkets() {
         didStartRequest()
-        marketService.fetchPosts { [weak self] markets in
+        marketService.getMarkets { [weak self] markets in
             self?.markets = markets
             self?.didEndRequest()
         } failure: { [weak self] error in

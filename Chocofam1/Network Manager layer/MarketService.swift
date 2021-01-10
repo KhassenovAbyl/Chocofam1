@@ -7,25 +7,15 @@
 
 import Foundation
 
-protocol MarketServiceProtocol {
-    func getMarkets(success: @escaping ([Market]) -> Void, failure: @escaping (Error) -> Void)
-}
-
-final class MarketService: MarketServiceProtocol{
+final class MarketService{
     
+    var dataProvider = MarketNetworkDataProvider()
     
     func getMarkets(success: @escaping ([Market]) -> Void, failure: @escaping (Error) -> Void) {
-        if localStorage.obtainPost().isEmpty {
-            dataProvider.fetchPosts { [weak self] posts in
-                self?.localStorage.save(posts: posts)
+            dataProvider.getPostsFromUrl{ posts in
                 success(posts)
             } failure: { error in
                 failure(error)
             }
-        } else {
-            success(localStorage.obtainPost())
         }
     }
-    
-    
-}
