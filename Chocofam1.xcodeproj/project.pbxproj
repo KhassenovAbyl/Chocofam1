@@ -13,9 +13,10 @@
 		EC570FB525A8D24A002D46FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC570FB325A8D24A002D46FE /* LaunchScreen.storyboard */; };
 		EC570FCF25A8EB03002D46FE /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC570FCE25A8EB03002D46FE /* HomeViewModel.swift */; };
 		EC570FD325A8EB70002D46FE /* Market.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC570FD225A8EB70002D46FE /* Market.swift */; };
-		EC570FD725A8ED8F002D46FE /* MarketService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC570FD625A8ED8F002D46FE /* MarketService.swift */; };
 		EC570FDF25A8EE4A002D46FE /* MarketDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC570FDE25A8EE4A002D46FE /* MarketDataProvider.swift */; };
 		EC570FE225A8F142002D46FE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC570FE125A8F142002D46FE /* HomeViewController.swift */; };
+		EC570FF625AC59C5002D46FE /* MarketStructures.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC570FF525AC59C5002D46FE /* MarketStructures.swift */; };
+		EC570FFA25AC5D55002D46FE /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC570FF925AC5D55002D46FE /* Location.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,9 +28,10 @@
 		EC570FB625A8D24A002D46FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EC570FCE25A8EB03002D46FE /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		EC570FD225A8EB70002D46FE /* Market.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Market.swift; sourceTree = "<group>"; };
-		EC570FD625A8ED8F002D46FE /* MarketService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketService.swift; sourceTree = "<group>"; };
 		EC570FDE25A8EE4A002D46FE /* MarketDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketDataProvider.swift; sourceTree = "<group>"; };
 		EC570FE125A8F142002D46FE /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		EC570FF525AC59C5002D46FE /* MarketStructures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketStructures.swift; sourceTree = "<group>"; };
+		EC570FF925AC5D55002D46FE /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,9 +66,9 @@
 			children = (
 				EC570FD525A8ED55002D46FE /* Network Manager layer */,
 				EC570FCD25A8EAE3002D46FE /* Presentation layer */,
+				EC570FF825AC5CFB002D46FE /* Models */,
 				EC570FBD25A8D25B002D46FE /* Supporting Files */,
 				EC570FB625A8D24A002D46FE /* Info.plist */,
-				EC570FD225A8EB70002D46FE /* Market.swift */,
 			);
 			path = Chocofam1;
 			sourceTree = "<group>";
@@ -95,9 +97,18 @@
 			isa = PBXGroup;
 			children = (
 				EC570FDE25A8EE4A002D46FE /* MarketDataProvider.swift */,
-				EC570FD625A8ED8F002D46FE /* MarketService.swift */,
 			);
 			path = "Network Manager layer";
+			sourceTree = "<group>";
+		};
+		EC570FF825AC5CFB002D46FE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EC570FD225A8EB70002D46FE /* Market.swift */,
+				EC570FF525AC59C5002D46FE /* MarketStructures.swift */,
+				EC570FF925AC5D55002D46FE /* Location.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -170,12 +181,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC570FDF25A8EE4A002D46FE /* MarketDataProvider.swift in Sources */,
+				EC570FF625AC59C5002D46FE /* MarketStructures.swift in Sources */,
 				EC570FA925A8D246002D46FE /* AppDelegate.swift in Sources */,
 				EC570FCF25A8EB03002D46FE /* HomeViewModel.swift in Sources */,
+				EC570FFA25AC5D55002D46FE /* Location.swift in Sources */,
 				EC570FAB25A8D246002D46FE /* SceneDelegate.swift in Sources */,
 				EC570FD325A8EB70002D46FE /* Market.swift in Sources */,
 				EC570FE225A8F142002D46FE /* HomeViewController.swift in Sources */,
-				EC570FD725A8ED8F002D46FE /* MarketService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

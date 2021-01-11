@@ -13,6 +13,7 @@ class HomeViewController: UIViewController {
     
     private let activityIndicator: UIActivityIndicatorView = {
         let indicator = UIActivityIndicatorView()
+        indicator.color = .red
         return indicator
     }()
 
@@ -28,13 +29,14 @@ class HomeViewController: UIViewController {
         }
         viewModel.didEndRequest = {
             self.activityIndicator.stopAnimating()
-            for i in self.viewModel.markets{
-                print(i)
-            }
+            print(self.viewModel.markets)
+            print("-------------------------------------")
+            print(self.viewModel.locations)
         }
         viewModel.didGetError = { error in
             print(error)
         }
     }
+    
     
 }

@@ -8,20 +8,22 @@
 import Foundation
 
 final class MarketNetworkDataProvider{
-    func getPostsFromUrl(success: @escaping ([Market]) -> Void, failure: @escaping (Error) -> Void) {
-        let urlString =  "https://api.jsonbin.io/b/5ff1946009f7c73f1b6d134f"
-        guard let url = URL(string: urlString) else {return}
+    
+    typealias result<T> = (Result<[T], Error>) -> Void
+
+    func getDataFromUrl<T: Decodable>(of type: T.Type, from url: String, completion: @escaping result<T>){
+        guard let url = URL(string: url) else {return}
         URLSession.shared.dataTask(with: url){(data, response, error) in
             if let error = error {
-                failure(error)
+                completion(.failure(error))
             } else if let data = data {
                 do {
-                    let markets = try JSONDecoder().decode([Market].self, from: data)
+                    let decodedData: [T] = try JSONDecoder().decode([T].self, from: data)
                     DispatchQueue.main.async {
-                        success(markets)
+                        completion(.success(decodedData))
                     }
                 } catch {
-                    failure(error)
+                    completion(.failure(error))
                 }
             }
         }.resume()
