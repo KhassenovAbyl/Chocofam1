@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		79FA3EEC9715131D9E2E784E /* Pods_Chocofam1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 850B46CD25C183C0343439A2 /* Pods_Chocofam1.framework */; };
 		EC570FA925A8D246002D46FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC570FA825A8D246002D46FE /* AppDelegate.swift */; };
 		EC570FAB25A8D246002D46FE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC570FAA25A8D246002D46FE /* SceneDelegate.swift */; };
 		EC570FB225A8D24A002D46FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC570FB125A8D24A002D46FE /* Assets.xcassets */; };
@@ -17,9 +18,14 @@
 		EC570FE225A8F142002D46FE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC570FE125A8F142002D46FE /* HomeViewController.swift */; };
 		EC570FF625AC59C5002D46FE /* MarketStructures.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC570FF525AC59C5002D46FE /* MarketStructures.swift */; };
 		EC570FFA25AC5D55002D46FE /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC570FF925AC5D55002D46FE /* Location.swift */; };
+		EC57100425B0C6AD002D46FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC57100325B0C6AC002D46FE /* Main.storyboard */; };
+		EC57100A25B1A1A6002D46FE /* CollectionViewCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC57100925B1A1A6002D46FE /* CollectionViewCells.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7FD70A1438717D2AB5C62E15 /* Pods-Chocofam1.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chocofam1.release.xcconfig"; path = "Target Support Files/Pods-Chocofam1/Pods-Chocofam1.release.xcconfig"; sourceTree = "<group>"; };
+		850B46CD25C183C0343439A2 /* Pods_Chocofam1.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Chocofam1.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D42AB0EC19F782E70041057 /* Pods-Chocofam1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chocofam1.debug.xcconfig"; path = "Target Support Files/Pods-Chocofam1/Pods-Chocofam1.debug.xcconfig"; sourceTree = "<group>"; };
 		EC570FA525A8D246002D46FE /* Chocofam1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chocofam1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC570FA825A8D246002D46FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EC570FAA25A8D246002D46FE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -32,6 +38,8 @@
 		EC570FE125A8F142002D46FE /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		EC570FF525AC59C5002D46FE /* MarketStructures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketStructures.swift; sourceTree = "<group>"; };
 		EC570FF925AC5D55002D46FE /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		EC57100325B0C6AC002D46FE /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		EC57100925B1A1A6002D46FE /* CollectionViewCells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCells.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,17 +47,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79FA3EEC9715131D9E2E784E /* Pods_Chocofam1.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1A9D628B4BA77D2F2B52732E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				850B46CD25C183C0343439A2 /* Pods_Chocofam1.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		EC570F9C25A8D246002D46FE = {
 			isa = PBXGroup;
 			children = (
 				EC570FA725A8D246002D46FE /* Chocofam1 */,
 				EC570FA625A8D246002D46FE /* Products */,
+				F6882A4E4CD02BBF0BEBD44B /* Pods */,
+				1A9D628B4BA77D2F2B52732E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -69,6 +88,7 @@
 				EC570FF825AC5CFB002D46FE /* Models */,
 				EC570FBD25A8D25B002D46FE /* Supporting Files */,
 				EC570FB625A8D24A002D46FE /* Info.plist */,
+				EC57100325B0C6AC002D46FE /* Main.storyboard */,
 			);
 			path = Chocofam1;
 			sourceTree = "<group>";
@@ -89,6 +109,7 @@
 			children = (
 				EC570FCE25A8EB03002D46FE /* HomeViewModel.swift */,
 				EC570FE125A8F142002D46FE /* HomeViewController.swift */,
+				EC57100925B1A1A6002D46FE /* CollectionViewCells.swift */,
 			);
 			path = "Presentation layer";
 			sourceTree = "<group>";
@@ -111,6 +132,16 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		F6882A4E4CD02BBF0BEBD44B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8D42AB0EC19F782E70041057 /* Pods-Chocofam1.debug.xcconfig */,
+				7FD70A1438717D2AB5C62E15 /* Pods-Chocofam1.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -118,9 +149,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EC570FB925A8D24A002D46FE /* Build configuration list for PBXNativeTarget "Chocofam1" */;
 			buildPhases = (
+				4D424DAFAFE9D2CD4B6EA80C /* [CP] Check Pods Manifest.lock */,
 				EC570FA125A8D246002D46FE /* Sources */,
 				EC570FA225A8D246002D46FE /* Frameworks */,
 				EC570FA325A8D246002D46FE /* Resources */,
+				71A55C90D0423D4596FDFD38 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -170,10 +203,53 @@
 			files = (
 				EC570FB525A8D24A002D46FE /* LaunchScreen.storyboard in Resources */,
 				EC570FB225A8D24A002D46FE /* Assets.xcassets in Resources */,
+				EC57100425B0C6AD002D46FE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4D424DAFAFE9D2CD4B6EA80C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Chocofam1-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		71A55C90D0423D4596FDFD38 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Chocofam1/Pods-Chocofam1-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Chocofam1/Pods-Chocofam1-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Chocofam1/Pods-Chocofam1-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EC570FA125A8D246002D46FE /* Sources */ = {
@@ -187,6 +263,7 @@
 				EC570FFA25AC5D55002D46FE /* Location.swift in Sources */,
 				EC570FAB25A8D246002D46FE /* SceneDelegate.swift in Sources */,
 				EC570FD325A8EB70002D46FE /* Market.swift in Sources */,
+				EC57100A25B1A1A6002D46FE /* CollectionViewCells.swift in Sources */,
 				EC570FE225A8F142002D46FE /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -323,6 +400,7 @@
 		};
 		EC570FBA25A8D24A002D46FE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D42AB0EC19F782E70041057 /* Pods-Chocofam1.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -342,6 +420,7 @@
 		};
 		EC570FBB25A8D24A002D46FE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7FD70A1438717D2AB5C62E15 /* Pods-Chocofam1.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

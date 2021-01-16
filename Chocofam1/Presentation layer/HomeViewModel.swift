@@ -11,27 +11,16 @@ final class HomeViewModel {
     var didStartRequest: () -> Void = {}
     var didEndRequest: () -> Void = {}
     var didGetError: (Error) -> Void = {_ in }
-    private(set) var markets: [Market] = []
-    private(set) var locations: [Location] = []
+    var markets: [Market] = []
+    var locations: [Location] = []
     private let marketService = MarketNetworkDataProvider()
     
-    func getMarkets() {
+    func getMarkets(start: Int){
         didStartRequest()
-        marketService.getDataFromUrl(of: Market.self, from: "https://hermes.chocofood.kz/api/delivery_areas/restaurants/?latitude=43.236511&limit=20&longitude=76.91573&offset=0"){ (result) in
-            switch result {
+        marketService.getDataFromUrl(of: Market.self, from: "https://hermes.chocofood.kz/api/delivery_areas/restaurants/?latitude=43.236511&&&longitude=76.91573&offset=\(start)&limit=\(12)"){ (result) in
+            switch result{
                 case .success(let markets):
-                    self.markets = markets
-                    self.didEndRequest()
-                case .failure(let error):
-                    print(error)
-                    self.didGetError(error)
-            }
-        }
-        didStartRequest()
-        marketService.getDataFromUrl(of: Location.self, from: "https://hermes.testchocofood.kz/api/cities/"){ (result) in
-            switch result {
-                case .success(let loc):
-                    self.locations = loc
+                    self.markets += markets
                     self.didEndRequest()
                 case .failure(let error):
                     print(error)
@@ -40,3 +29,14 @@ final class HomeViewModel {
         }
     }
 }
+
+//        marketService.getDataFromUrl(of: Location.self, from: "https://hermes.testchocofood.kz/api/cities/"){ (result) in
+//                switch result{
+//                    case .success(let loc):
+//                        self.locations = loc
+//                        self.didEndRequest()
+//                    case .failure(let error):
+//                        print(error)
+//                        self.didGetError(error)
+//                }
+//            }
