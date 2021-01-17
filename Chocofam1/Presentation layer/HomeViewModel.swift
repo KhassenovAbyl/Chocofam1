@@ -30,6 +30,7 @@ final class HomeViewModel {
     }
 }
 
+
 //        marketService.getDataFromUrl(of: Location.self, from: "https://hermes.testchocofood.kz/api/cities/"){ (result) in
 //                switch result{
 //                    case .success(let loc):
