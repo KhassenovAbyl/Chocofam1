@@ -62,5 +62,11 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NSLocationUsageDescription</key>
+	<string>To find nearest restaurants you need to share location</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>To find nearest restaurants you need to share location</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>To find nearest restaurants you need to share location</string>
 </dict>
 </plist>

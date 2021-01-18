@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -87,8 +87,9 @@
 				EC570FCD25A8EAE3002D46FE /* Presentation layer */,
 				EC570FF825AC5CFB002D46FE /* Models */,
 				EC570FBD25A8D25B002D46FE /* Supporting Files */,
-				EC570FB625A8D24A002D46FE /* Info.plist */,
+				EC57107125B4F05F002D46FE /* Fonts */,
 				EC57100325B0C6AC002D46FE /* Main.storyboard */,
+				EC570FB625A8D24A002D46FE /* Info.plist */,
 			);
 			path = Chocofam1;
 			sourceTree = "<group>";
@@ -132,13 +133,19 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		EC57107125B4F05F002D46FE /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		F6882A4E4CD02BBF0BEBD44B /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				8D42AB0EC19F782E70041057 /* Pods-Chocofam1.debug.xcconfig */,
 				7FD70A1438717D2AB5C62E15 /* Pods-Chocofam1.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -333,7 +340,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -388,7 +395,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
