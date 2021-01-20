@@ -17,7 +17,7 @@ final class HomeViewModel {
     
     func getMarkets(start: Int){
         didStartRequest()
-        marketService.getDataFromUrl(of: Market.self, from: "https://hermes.chocofood.kz/api/delivery_areas/restaurants/?latitude=43.236511&&&longitude=76.91573&offset=\(start)&limit=\(12)"){ (result) in
+        marketService.getDataFromUrl(of: Market.self, from: "https://hermes.chocofood.kz/api/delivery_areas/restaurants/?latitude=43.236511&&&longitude=76.91573&offset=\(start)&limit=\(10)"){ (result) in
             switch result{
                 case .success(let markets):
                     self.markets += markets

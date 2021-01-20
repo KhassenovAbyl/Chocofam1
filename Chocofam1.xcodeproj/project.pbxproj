@@ -19,7 +19,8 @@
 		EC570FF625AC59C5002D46FE /* MarketStructures.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC570FF525AC59C5002D46FE /* MarketStructures.swift */; };
 		EC570FFA25AC5D55002D46FE /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC570FF925AC5D55002D46FE /* Location.swift */; };
 		EC57100425B0C6AD002D46FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC57100325B0C6AC002D46FE /* Main.storyboard */; };
-		EC57100A25B1A1A6002D46FE /* CollectionViewCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC57100925B1A1A6002D46FE /* CollectionViewCells.swift */; };
+		EC96F74025B73E2D004BDCCF /* Cell1.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC96F73F25B73E2D004BDCCF /* Cell1.swift */; };
+		EC96F74325B73E48004BDCCF /* Cell2.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC96F74225B73E48004BDCCF /* Cell2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,7 +40,8 @@
 		EC570FF525AC59C5002D46FE /* MarketStructures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketStructures.swift; sourceTree = "<group>"; };
 		EC570FF925AC5D55002D46FE /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		EC57100325B0C6AC002D46FE /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		EC57100925B1A1A6002D46FE /* CollectionViewCells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCells.swift; sourceTree = "<group>"; };
+		EC96F73F25B73E2D004BDCCF /* Cell1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell1.swift; sourceTree = "<group>"; };
+		EC96F74225B73E48004BDCCF /* Cell2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,7 +112,8 @@
 			children = (
 				EC570FCE25A8EB03002D46FE /* HomeViewModel.swift */,
 				EC570FE125A8F142002D46FE /* HomeViewController.swift */,
-				EC57100925B1A1A6002D46FE /* CollectionViewCells.swift */,
+				EC96F73F25B73E2D004BDCCF /* Cell1.swift */,
+				EC96F74225B73E48004BDCCF /* Cell2.swift */,
 			);
 			path = "Presentation layer";
 			sourceTree = "<group>";
@@ -268,9 +271,10 @@
 				EC570FA925A8D246002D46FE /* AppDelegate.swift in Sources */,
 				EC570FCF25A8EB03002D46FE /* HomeViewModel.swift in Sources */,
 				EC570FFA25AC5D55002D46FE /* Location.swift in Sources */,
+				EC96F74025B73E2D004BDCCF /* Cell1.swift in Sources */,
+				EC96F74325B73E48004BDCCF /* Cell2.swift in Sources */,
 				EC570FAB25A8D246002D46FE /* SceneDelegate.swift in Sources */,
 				EC570FD325A8EB70002D46FE /* Market.swift in Sources */,
-				EC57100A25B1A1A6002D46FE /* CollectionViewCells.swift in Sources */,
 				EC570FE225A8F142002D46FE /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
