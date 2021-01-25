@@ -46,7 +46,7 @@ class MenuViewController: UIViewController {
     var imageString: String?
     var viewModel = HomeViewModel()
     
-    var array = [""]
+    let blurEffectView = UIVisualEffectView(effect: UIBlurEffect(style: .dark))
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -72,7 +72,10 @@ class MenuViewController: UIViewController {
         timeLabel.text = time
         revewLabel.text = review
         collectionFoodTypes2.alpha = 0
-
+    
+        blurEffectView.frame = imageView.bounds
+        blurEffectView.alpha = 0
+        imageView.addSubview(blurEffectView)
     }
     
     private func StartURLSession() {
@@ -113,12 +116,15 @@ extension MenuViewController: UITableViewDelegate , UITableViewDataSource{
 
         if tableView.contentOffset.y < 0{
             rect.origin.y = tableView.contentOffset.y
+            rect.origin.x = tableView.contentOffset.y/2
             rect.size.height = -tableView.contentOffset.y + 200
+            rect.size.width = -tableView.contentOffset.y + 414
         }
         imageView.frame = rect
         if tableView.contentOffset.y <= 160{
             navBar.backgroundColor = UIColor.white.withAlphaComponent(0)
             navBar.topItem?.title = ""
+            blurEffectView.alpha = tableView.contentOffset.y/100
         }else{
             navBar.backgroundColor = #colorLiteral(red: 0.1817893401, green: 0.1817893401, blue: 0.1817893401, alpha: 1)
             navBar.topItem?.title = name
@@ -140,6 +146,15 @@ extension MenuViewController: UITableViewDelegate , UITableViewDataSource{
                 $0.left.equalToSuperview().offset(0)
                 $0.right.equalToSuperview().offset(0)
                 $0.height.equalTo(40)
+            }
+        }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "cellSegue2"{
+            let destination = segue.destination as! DetailedInfoVC
+            if let index = tableView.indexPathsForSelectedRows?.last{
+            destination.foodNameLabel.text = viewModel.menu.food_types[index.section].foods[index.row].title
             }
         }
     }
@@ -171,7 +186,6 @@ extension MenuViewController: UICollectionViewDelegate , UICollectionViewDataSou
         self.scrollto(startIndex: indexPath)
         if collectionView == collectionFoodTypes2{
             let cell2 = collectionFoodTypes2.dequeueReusableCell(withReuseIdentifier: "collectionCell2", for: indexPath) as! CollectionViewCell2
-            print("asdasd")
             cell2.backgroundColor = .green
         }else{
             let cell1 = collectionFoodTypes.dequeueReusableCell(withReuseIdentifier: "collectionCell", for: indexPath) as! CollectionViewCell

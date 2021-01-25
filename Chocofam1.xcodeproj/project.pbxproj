@@ -23,6 +23,7 @@
 		EC580BE525BC5C2900AC50A0 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC580BE425BC5C2900AC50A0 /* TableViewCell.swift */; };
 		EC580BE925BCBBD100AC50A0 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC580BE825BCBBD100AC50A0 /* CollectionViewCell.swift */; };
 		EC580BEC25BCC34700AC50A0 /* CollectionViewCell2.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC580BEB25BCC34700AC50A0 /* CollectionViewCell2.swift */; };
+		EC96AAC025BEA4540065BAF6 /* DetailedInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC96AABF25BEA4540065BAF6 /* DetailedInfoVC.swift */; };
 		EC96F74025B73E2D004BDCCF /* Cell1.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC96F73F25B73E2D004BDCCF /* Cell1.swift */; };
 		EC96F74325B73E48004BDCCF /* Cell2.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC96F74225B73E48004BDCCF /* Cell2.swift */; };
 		ECEDEB8D25B8B8620024D2E9 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECEDEB8C25B8B8620024D2E9 /* MenuViewController.swift */; };
@@ -49,6 +50,7 @@
 		EC580BE425BC5C2900AC50A0 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		EC580BE825BCBBD100AC50A0 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		EC580BEB25BCC34700AC50A0 /* CollectionViewCell2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell2.swift; sourceTree = "<group>"; };
+		EC96AABF25BEA4540065BAF6 /* DetailedInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedInfoVC.swift; sourceTree = "<group>"; };
 		EC96F73F25B73E2D004BDCCF /* Cell1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell1.swift; sourceTree = "<group>"; };
 		EC96F74225B73E48004BDCCF /* Cell2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell2.swift; sourceTree = "<group>"; };
 		ECEDEB8C25B8B8620024D2E9 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
@@ -123,6 +125,7 @@
 				EC570FCE25A8EB03002D46FE /* HomeViewModel.swift */,
 				EC570FE125A8F142002D46FE /* HomeViewController.swift */,
 				ECEDEB8C25B8B8620024D2E9 /* MenuViewController.swift */,
+				EC96AABF25BEA4540065BAF6 /* DetailedInfoVC.swift */,
 			);
 			path = "Presentation layer";
 			sourceTree = "<group>";
@@ -281,6 +284,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC96AAC025BEA4540065BAF6 /* DetailedInfoVC.swift in Sources */,
 				EC580BE525BC5C2900AC50A0 /* TableViewCell.swift in Sources */,
 				EC570FDF25A8EE4A002D46FE /* MarketDataProvider.swift in Sources */,
 				EC570FF625AC59C5002D46FE /* MarketStructures.swift in Sources */,

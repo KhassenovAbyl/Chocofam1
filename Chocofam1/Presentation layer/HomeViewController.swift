@@ -29,7 +29,7 @@ class HomeViewController: UIViewController {
             locationManager.requestAlwaysAuthorization()
         }
         
-        viewModel.getMarkets(start: 0)
+        viewModel.getMarkets(start: 0 , lat: lat ?? "43.236511", long: long ?? "76.91573")
         StartURLSession()
         self.collectionView.reloadData()
     }
@@ -64,7 +64,7 @@ extension HomeViewController: UICollectionViewDelegate , UICollectionViewDataSou
     
     func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
         if indexPath.row == viewModel.markets.count - 1{
-            self.viewModel.getMarkets(start: viewModel.markets.count - 1)
+            self.viewModel.getMarkets(start: viewModel.markets.count - 1 , lat: lat ?? "43.236511", long: long ?? "76.91573")
             }
         }
     

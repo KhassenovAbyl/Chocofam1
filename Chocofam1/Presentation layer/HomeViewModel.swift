@@ -16,9 +16,9 @@ final class HomeViewModel {
     var menu: Menu = Menu.init(food_types: [])
     private let marketService = MarketNetworkDataProvider()
     
-    func getMarkets(start: Int){
+    func getMarkets(start: Int , lat: String , long: String){
         didStartRequest()
-        marketService.getDataFromUrl(of: Market.self, from: "https://hermes.chocofood.kz/api/delivery_areas/restaurants/?latitude=43.236511&&&longitude=76.91573&offset=\(start)&limit=\(10)"){ (result) in
+        marketService.getDataFromUrl(of: Market.self, from: "https://hermes.chocofood.kz/api/delivery_areas/restaurants/?latitude=\(lat)&&&longitude=\(long)&offset=\(start)&limit=\(10)"){ (result) in
             switch result{
                 case .success(let markets):
                     self.markets += markets
