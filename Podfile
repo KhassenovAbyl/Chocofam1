@@ -7,5 +7,6 @@ target 'Chocofam1' do
 
   # Pods for Chocofam1
   pod 'SDWebImage'
+  pod 'SnapKit'
 
 end

@@ -13,6 +13,7 @@ final class HomeViewModel {
     var didGetError: (Error) -> Void = {_ in }
     var markets: [Market] = []
     var locations: [Location] = []
+    var menu: Menu = Menu.init(food_types: [])
     private let marketService = MarketNetworkDataProvider()
     
     func getMarkets(start: Int){
@@ -21,6 +22,19 @@ final class HomeViewModel {
             switch result{
                 case .success(let markets):
                     self.markets += markets
+                    self.didEndRequest()
+                case .failure(let error):
+                    print(error)
+                    self.didGetError(error)
+            }
+        }
+    }
+    func getMenu(pk : String){
+        didStartRequest()
+        marketService.getDictFromUrl(of: Menu.self, from: "https://hermes.chocofood.kz/api/extended_restaurants/\(pk)/") { (result) in
+            switch result{
+                case .success(let menu):
+                    self.menu = menu
                     self.didEndRequest()
                 case .failure(let error):
                     print(error)

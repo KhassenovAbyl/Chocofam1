@@ -19,8 +19,13 @@
 		EC570FF625AC59C5002D46FE /* MarketStructures.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC570FF525AC59C5002D46FE /* MarketStructures.swift */; };
 		EC570FFA25AC5D55002D46FE /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC570FF925AC5D55002D46FE /* Location.swift */; };
 		EC57100425B0C6AD002D46FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC57100325B0C6AC002D46FE /* Main.storyboard */; };
+		EC580BE225BB458000AC50A0 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC580BE125BB458000AC50A0 /* Menu.swift */; };
+		EC580BE525BC5C2900AC50A0 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC580BE425BC5C2900AC50A0 /* TableViewCell.swift */; };
+		EC580BE925BCBBD100AC50A0 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC580BE825BCBBD100AC50A0 /* CollectionViewCell.swift */; };
+		EC580BEC25BCC34700AC50A0 /* CollectionViewCell2.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC580BEB25BCC34700AC50A0 /* CollectionViewCell2.swift */; };
 		EC96F74025B73E2D004BDCCF /* Cell1.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC96F73F25B73E2D004BDCCF /* Cell1.swift */; };
 		EC96F74325B73E48004BDCCF /* Cell2.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC96F74225B73E48004BDCCF /* Cell2.swift */; };
+		ECEDEB8D25B8B8620024D2E9 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECEDEB8C25B8B8620024D2E9 /* MenuViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,8 +45,13 @@
 		EC570FF525AC59C5002D46FE /* MarketStructures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketStructures.swift; sourceTree = "<group>"; };
 		EC570FF925AC5D55002D46FE /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		EC57100325B0C6AC002D46FE /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		EC580BE125BB458000AC50A0 /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
+		EC580BE425BC5C2900AC50A0 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		EC580BE825BCBBD100AC50A0 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		EC580BEB25BCC34700AC50A0 /* CollectionViewCell2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell2.swift; sourceTree = "<group>"; };
 		EC96F73F25B73E2D004BDCCF /* Cell1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell1.swift; sourceTree = "<group>"; };
 		EC96F74225B73E48004BDCCF /* Cell2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell2.swift; sourceTree = "<group>"; };
+		ECEDEB8C25B8B8620024D2E9 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,8 +98,8 @@
 				EC570FD525A8ED55002D46FE /* Network Manager layer */,
 				EC570FCD25A8EAE3002D46FE /* Presentation layer */,
 				EC570FF825AC5CFB002D46FE /* Models */,
+				ECEDEB8825B859D40024D2E9 /* UI supporting files */,
 				EC570FBD25A8D25B002D46FE /* Supporting Files */,
-				EC57107125B4F05F002D46FE /* Fonts */,
 				EC57100325B0C6AC002D46FE /* Main.storyboard */,
 				EC570FB625A8D24A002D46FE /* Info.plist */,
 			);
@@ -112,8 +122,7 @@
 			children = (
 				EC570FCE25A8EB03002D46FE /* HomeViewModel.swift */,
 				EC570FE125A8F142002D46FE /* HomeViewController.swift */,
-				EC96F73F25B73E2D004BDCCF /* Cell1.swift */,
-				EC96F74225B73E48004BDCCF /* Cell2.swift */,
+				ECEDEB8C25B8B8620024D2E9 /* MenuViewController.swift */,
 			);
 			path = "Presentation layer";
 			sourceTree = "<group>";
@@ -132,15 +141,21 @@
 				EC570FD225A8EB70002D46FE /* Market.swift */,
 				EC570FF525AC59C5002D46FE /* MarketStructures.swift */,
 				EC570FF925AC5D55002D46FE /* Location.swift */,
+				EC580BE125BB458000AC50A0 /* Menu.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
 		};
-		EC57107125B4F05F002D46FE /* Fonts */ = {
+		ECEDEB8825B859D40024D2E9 /* UI supporting files */ = {
 			isa = PBXGroup;
 			children = (
+				EC96F73F25B73E2D004BDCCF /* Cell1.swift */,
+				EC96F74225B73E48004BDCCF /* Cell2.swift */,
+				EC580BE425BC5C2900AC50A0 /* TableViewCell.swift */,
+				EC580BE825BCBBD100AC50A0 /* CollectionViewCell.swift */,
+				EC580BEB25BCC34700AC50A0 /* CollectionViewCell2.swift */,
 			);
-			path = Fonts;
+			path = "UI supporting files";
 			sourceTree = "<group>";
 		};
 		F6882A4E4CD02BBF0BEBD44B /* Pods */ = {
@@ -266,14 +281,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC580BE525BC5C2900AC50A0 /* TableViewCell.swift in Sources */,
 				EC570FDF25A8EE4A002D46FE /* MarketDataProvider.swift in Sources */,
 				EC570FF625AC59C5002D46FE /* MarketStructures.swift in Sources */,
 				EC570FA925A8D246002D46FE /* AppDelegate.swift in Sources */,
 				EC570FCF25A8EB03002D46FE /* HomeViewModel.swift in Sources */,
 				EC570FFA25AC5D55002D46FE /* Location.swift in Sources */,
 				EC96F74025B73E2D004BDCCF /* Cell1.swift in Sources */,
+				EC580BE225BB458000AC50A0 /* Menu.swift in Sources */,
+				ECEDEB8D25B8B8620024D2E9 /* MenuViewController.swift in Sources */,
 				EC96F74325B73E48004BDCCF /* Cell2.swift in Sources */,
+				EC580BE925BCBBD100AC50A0 /* CollectionViewCell.swift in Sources */,
 				EC570FAB25A8D246002D46FE /* SceneDelegate.swift in Sources */,
+				EC580BEC25BCC34700AC50A0 /* CollectionViewCell2.swift in Sources */,
 				EC570FD325A8EB70002D46FE /* Market.swift in Sources */,
 				EC570FE225A8F142002D46FE /* HomeViewController.swift in Sources */,
 			);

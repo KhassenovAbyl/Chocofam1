@@ -39,9 +39,10 @@ class HomeViewController: UIViewController {
         viewModel.didEndRequest = {
             self.collectionView.reloadData()
         }
-        viewModel.didGetError = { error in print(error)}
+        viewModel.didGetError = {error in print(error)}
     }
 }
+
 
 extension HomeViewController: UICollectionViewDelegate , UICollectionViewDataSource{
     
@@ -66,6 +67,19 @@ extension HomeViewController: UICollectionViewDelegate , UICollectionViewDataSou
             self.viewModel.getMarkets(start: viewModel.markets.count - 1)
             }
         }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let destination = segue.destination as! MenuViewController
+        if let indexPath = collectionView.indexPathsForSelectedItems?.last {
+            destination.pk = viewModel.markets[indexPath.item].restaurant.pk
+            destination.name = viewModel.markets[indexPath.row].restaurant.title
+            destination.price1 = "\(viewModel.markets[indexPath.row].delivery_tariff.conditions[0].delivery_cost)"
+            destination.price2 = "\(viewModel.markets[indexPath.row].delivery_tariff.conditions[0].order_min_cost)"
+            destination.imageString = viewModel.markets[indexPath.row].restaurant.image
+            destination.time = "\(viewModel.markets[indexPath.row].delivery_time.low_limit_minutes) - \(viewModel.markets[indexPath.row].delivery_time.upper_limit_minutes) + мин"
+            destination.review = "\(Double((viewModel.markets[indexPath.row].restaurant.rating)*5/100)) + Отзывы"
+        }
+    }
 }
 
 extension HomeViewController: CLLocationManagerDelegate{
