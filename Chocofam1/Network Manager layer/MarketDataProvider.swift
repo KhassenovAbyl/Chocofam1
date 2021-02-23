@@ -51,10 +51,3 @@ final class MarketNetworkDataProvider{
         }.resume()
     }
 }
-
-
-//    var backgroundSession:URLSession = {
-//            let config = URLSessionConfiguration.background(withIdentifier: "background")
-//            return URLSession(configuration: config, delegate: nil, delegateQueue: nil)
-//        }()
-//
